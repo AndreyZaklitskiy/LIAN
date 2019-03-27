@@ -1,6 +1,6 @@
 // modules & sections
 @import "../../node_modules/bootstrap/scss/bootstrap-grid";
-@import "../../node_modules/font-awesome/scss/font-awesome";
+//@import "../../node_modules/font-awesome/scss/font-awesome";
 
 @import "modules/sprite";
 @import "functions";
@@ -85,5 +85,18 @@ header {
     top: 45px;
     left: -35px;
 
+  }
+}
+
+.header .search {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: $grey;
+  margin-left: 30px;
+  &:hover, &:active {
+    color: black;
   }
 }
