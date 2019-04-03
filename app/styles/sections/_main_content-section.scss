@@ -37,3 +37,20 @@ li.main_content-menu-item.active {
     color: #000;
   }
 }
+
+.main_content-row {
+  @extend .row;
+}
+
+.main_content-col {
+  @extend .col-4;
+  height: 100%;
+  .slide {
+    cursor: pointer;
+    margin-bottom: 34px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
