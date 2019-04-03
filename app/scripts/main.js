@@ -7,7 +7,7 @@ $(document).ready(function () {
 
   //slick main carousel
 
-  $('.home-main-slider').slick({
+  $('.main_top-slider').slick({
     dots: true,
     infinite: true,
     prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
