@@ -44,3 +44,19 @@ body {
 }
 
 
+.btn-load-more {
+  width: 125px;
+  height: 30px;
+  color: #ffffff;
+  font-size: 13px;
+  font-family: $bold;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #949494;
+  border: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
