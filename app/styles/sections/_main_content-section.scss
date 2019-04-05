@@ -1,5 +1,8 @@
 .main_content-section {
-  padding-bottom: 72px;
+  .container {
+    padding-bottom: 102px;
+  }
+
 }
 
 ul.main_content-menu {
@@ -44,7 +47,7 @@ li.main_content-menu-item.active {
 }
 
 .main_content-col {
-  @extend .col-md-4;
+  @extend .col-lg-4, .col-md-6;
   height: 100%;
   .slide {
     display: flex;
