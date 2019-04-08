@@ -1,17 +1,8 @@
 .main_top-slide {
+  @extend .top-bg;
   background-image: url(../../images/top-bg.jpg);
-  background-repeat: no-repeat;
   background-position: center -90px;
-  height: 100vh;
-  width: 100vw;
   text-align: center;
-  position: relative;
-  p {
-    font-size: 18px;
-    font-family: $light;
-    text-transform: uppercase;
-    letter-spacing: 6px;
-  }
 }
 .cont {
   position: absolute;
@@ -24,16 +15,23 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  p {
+    font-size: 18px;
+    font-family: $light;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+  }
+  p.title {
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: black;
+    color: white;
+    font-size: 48px;
+    margin-bottom: 48px;
+    letter-spacing: 4px;
+  }
 }
-p.title {
-  display: inline-block;
-  padding: 10px 40px;
-  background-color: black;
-  color: white;
-  font-size: 48px;
-  margin-bottom: 48px;
-  letter-spacing: 4px;
-}
+
 
 button.slick-prev, button.slick-next {
   width: 42px;
@@ -107,38 +105,40 @@ ul.slick-dots {
 @media (max-width: 768px) {
   .main_top-slide {
     background-position: -800px center;
+  }
+  .cont {
     p {
       font-size: 14px;
     }
-  }
-  p.title {
-    padding: 10px 30px;
-    font-size: 38px;
-    margin-bottom: 30px;
+    p.title {
+      padding: 10px 30px;
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
   }
 }
 @media (max-width: 578px) {
-  .main_top-slide {
+  .cont {
     background-position: right center;
     p {
       font-size: 10px;
     }
-  }
-  p.title {
-    font-size: 24px;
+    p.title {
+      font-size: 24px;
+    }
   }
 }
 @media (max-width: 480px) {
-  .main_top-slide {
+  .cont {
     background-position: right center;
     p {
       font-size: 8px;
     }
-  }
-  p.title {
-    padding: 10px 20px;
-    font-size: 20px;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
+    p.title {
+      padding: 10px 20px;
+      font-size: 20px;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
   }
 }
