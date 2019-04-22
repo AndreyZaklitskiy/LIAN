@@ -1,16 +1,21 @@
 // modules & sections
 @import "../../node_modules/bootstrap/scss/bootstrap-grid";
-//@import "../../node_modules/font-awesome/scss/font-awesome";
-//@import "../../node_modules/slick-carousel/slick/slick";
-//@import "../../node_modules/slick-carousel/slick/slick-theme";
+
+@import "../../node_modules/swiper/src/swiper";
+
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+
 @import "modules/sprite";
 @import "functions";
 @import "reset";
 @import "fonts";
 @import "variables";
+
 @import "sections/header";
 @import "sections/head-section";
-@import "sections/main_top-section";
+@import "sections/home-first-screen";
 @import "sections/main_content-section";
 @import "sections/footer-section";
 @import "sections/about-top-section";
@@ -57,7 +62,6 @@ p {
   color: #9b9b9b;
 }
 
-
 .btn-load-more {
   position: absolute;
   bottom: 72px;
@@ -89,6 +93,4 @@ p {
 .top-bg {
   position: relative;
   background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
 }

@@ -5,14 +5,24 @@ $(document).ready(function () {
     $(this).addClass('active');
   });
 
-  //slick main carousel
-
-  $('.main_top-slider').slick({
-    dots: true,
-    infinite: true,
-    prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
-    nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+  new Swiper('.swiper-container', {
+    grabCursor: true,
+    autoHeight: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return `<button class="${className}"></button>`;
+      },
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
   });
+
+    /*prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',*/
 
 });
 
