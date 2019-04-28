@@ -9,7 +9,7 @@ $(document).ready(function () {
     grabCursor: true,
     autoHeight: true,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper-scrollbar',
       clickable: true,
       renderBullet: function (index, className) {
         return `<button class="${className}"></button>`;

@@ -78,11 +78,10 @@ li.waterfall-menu-item.active {
   }
 
 }
-
 .cross {
   transition: all 1s;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -91,8 +90,8 @@ li.waterfall-menu-item.active {
   position: absolute;
   top: 50%;
   right: 50%;
-  margin-top: -40px;
-  margin-right: -40px;
+  margin-top: -25px;
+  margin-right: -25px;
   //display: flex;
   align-items: center;
   justify-content: center;
