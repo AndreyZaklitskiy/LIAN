@@ -3,9 +3,8 @@
 
 @import "../../node_modules/swiper/src/swiper";
 
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+//@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+
 
 @import "modules/sprite";
 @import "functions";
@@ -16,7 +15,7 @@
 @import "sections/header";
 @import "sections/head-section";
 @import "sections/home-first-screen";
-@import "sections/main_content-section";
+@import "sections/waterfall-section";
 @import "sections/footer-section";
 @import "sections/about-top-section";
 @import "sections/about-content-section";
@@ -94,3 +93,6 @@ p {
   position: relative;
   background-repeat: no-repeat;
 }
+
+
+

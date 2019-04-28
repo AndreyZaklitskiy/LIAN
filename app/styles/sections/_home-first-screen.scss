@@ -66,6 +66,9 @@ header .search {
   text-align: center;
   height: calc(100vh - 90px);
 }
+.swiper-wrapper {
+  position: relative;
+}
 .first-screen__slide {
   position: relative;
   background-image: url(../../images/top-bg.jpg);
@@ -203,8 +206,10 @@ ul.slick-dots {
 
 .swiper-button-prev,
 .swiper-button-next {
+  /*
   @extend %fa-icon;
-  @extend .fas;
+  @extend .fa;
+  */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -228,11 +233,7 @@ ul.slick-dots {
   font-size: 16px;
   cursor: pointer;
   z-index: 1;
-  -webkit-transform: scale(0);
-  -moz-transform: scale(0);
-  -ms-transform: scale(0);
-  -o-transform: scale(0);
-  transform: scale(0);
+//transform: scale(1.5);
   &:hover {
     background-color: $black;
     color: $white;
@@ -247,13 +248,13 @@ ul.slick-dots {
   }
 }
 .swiper-button-prev {
-  left: -55px;
+  left: 55px;
   &::before {
     //content: fa-content($fa-var-arrow-left);
   }
 }
 .swiper-button-next {
-  right: -55px;
+  right: 55px;
   &::before {
     //content: fa-content($fa-var-arrow-right);
   }
