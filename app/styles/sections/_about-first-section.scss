@@ -1,0 +1,58 @@
+.about_first-screen {
+  background-image: url(../../images/about-top-bg.jpg);
+  background-position: 100%;
+  background-color: #f0f0f1;
+  background-repeat: no-repeat;
+
+  height: 350px;
+  .container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  p {
+    font-size: 18px;
+    font-family: $light;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+  }
+  p.title {
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: black;
+    color: white;
+    font-size: 48px;
+    margin-bottom: 48px;
+    letter-spacing: 4px;
+  }
+}
+
+.rangeslider {
+  input {
+    width: 100%;
+  }
+
+}
+
+
+
+
+@media (max-width: 992px) {
+  .about_first-screen {
+    background-position: 90% ;
+  }
+}
+@media (max-width: 768px) {
+  .about_first-screen {
+    background-position: 75% ;
+  }
+}
+@media (max-width: 578px) {
+  .about_first-screen {
+    .cont {
+      padding-left: 15px;
+    }
+  }
+}

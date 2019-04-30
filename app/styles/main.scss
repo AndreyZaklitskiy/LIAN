@@ -4,7 +4,7 @@
 @import "../../node_modules/swiper/src/swiper";
 
 //@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
-
+@import "../../node_modules/rangeslider.js/dist/rangeslider.css";
 
 @import "modules/sprite";
 @import "functions";
@@ -17,7 +17,7 @@
 @import "sections/home-first-screen";
 @import "sections/waterfall-section";
 @import "sections/footer-section";
-@import "sections/about-top-section";
+@import "sections/about-first-section";
 @import "sections/about-content-section";
 
 
@@ -89,10 +89,6 @@ p {
   }
 }
 
-.top-bg {
-  position: relative;
-  background-repeat: no-repeat;
-}
 
 
 

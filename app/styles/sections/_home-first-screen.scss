@@ -64,7 +64,7 @@ header .search {
 .first-screen__slider {
   position: relative;
   text-align: center;
-  height: calc(100vh - 90px);
+  min-height: calc(100vh - 90px);
 }
 .swiper-wrapper {
   position: relative;
@@ -96,9 +96,9 @@ header .search {
     font-size: 48px;
     margin-bottom: 48px;
     letter-spacing: 4px;
-
   }
 }
+
 .first-screen {
   .swiper-container-autoheight, .swiper-container-autoheight .swiper-slide {
     height: calc(100vh - 90px);

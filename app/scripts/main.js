@@ -24,12 +24,15 @@ $(document).ready(function () {
     /*prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
     nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',*/
 
-  $('.waterfall-block').masonry({
+  $('.waterfall').masonry({
     // options
     itemSelector: '.waterfall-item',
     columnWidth: 360,
     gutter: 15
   });
+
+  $('input[type="range"]').rangeslider();
+
 });
 
 
