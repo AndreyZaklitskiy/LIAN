@@ -1,0 +1,58 @@
+.team {
+  background-color: #fafafa;
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
+.team-header {
+  text-align: center;
+  margin-bottom: 70px;
+
+  h2 {
+    margin-bottom: 45px;
+  }
+
+  p {
+    line-height: 20px;
+    max-width: 615px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cards {
+    @extend .row;
+    background-color: #fafafa;
+  }
+}
+.cards-item {
+  @extend .col-md-4;
+  margin-bottom: 45px;
+}
+.cards-photo {
+  background-color: #fff;
+  width: 100%;
+  height: 438px;
+  text-align: center;
+  overflow: hidden;
+  img {
+    width: auto;
+    height: auto;
+  }
+}
+.cards-information {
+  padding: 35px 40px 30px;
+  background-color: #fff;
+  .name {
+    font-size: 24px;
+  }
+  .profession {
+    color: #777777;
+    font-family: $bold;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 26px;
+  }
+  p {
+    line-height: 16px;
+  }
+}

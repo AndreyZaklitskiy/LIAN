@@ -19,6 +19,10 @@
 @import "sections/footer-section";
 @import "sections/about-first-section";
 @import "sections/about-content-section";
+@import "sections/team-section";
+
+
+
 
 
 .browserupgrade {
@@ -46,6 +50,13 @@ body {
 
 .container {
   position: relative;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: $light;
+  text-transform: uppercase;
+  color: #000;
 }
 
 h3 {

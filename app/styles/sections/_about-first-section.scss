@@ -31,7 +31,7 @@
 
 .rangeslider {
   input {
-    width: 100%;
+
   }
 
 }
@@ -40,19 +40,40 @@
 
 
 @media (max-width: 992px) {
-  .about_first-screen {
-    background-position: 90% ;
-  }
+
 }
 @media (max-width: 768px) {
-  .about_first-screen {
-    background-position: 75% ;
+.about_first-screen {
+  p {
+    font-size: 14px;
+  }
+  p.title {
+    padding: 10px 30px;
+    font-size: 36px;
+    margin-bottom: 30px;
   }
 }
+}
 @media (max-width: 578px) {
+.about_first-screen {
+  p {
+    font-size: 10px;
+  }
+  p.title {
+    font-size: 24px;
+  }
+}
+}
+@media (max-width: 480px) {
   .about_first-screen {
-    .cont {
-      padding-left: 15px;
+    p {
+      font-size: 8px;
+    }
+    p.title {
+      padding: 10px 20px;
+      font-size: 20px;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
     }
   }
 }
