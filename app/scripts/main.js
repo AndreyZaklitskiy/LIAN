@@ -4,8 +4,24 @@ $(document).ready(function () {
     $(this).siblings().removeClass('active');
     $(this).addClass('active');
   });
-
-  new Swiper('.swiper-container', {
+  if ($('.swiper-container').length) {
+    new Swiper('.swiper-container', {
+      grabCursor: true,
+      autoHeight: true,
+      pagination: {
+        el: '.swiper-scrollbar',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return `<button class="${className}"></button>`;
+        },
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
+  }
+  /*new Swiper('.swiper-container', {
     grabCursor: true,
     autoHeight: true,
     pagination: {
@@ -19,7 +35,7 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     }
-  });
+  });*/
 
   $('.waterfall').masonry({
     // options
