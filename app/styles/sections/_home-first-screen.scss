@@ -1,74 +1,14 @@
-header {
-  z-index: 2;
-  box-shadow: 1px 2px 4.75px 0.25px rgba(0, 0, 0, 0.15);
-  height: 90px;
-  .container {
-    display: flex;
-    align-items: center;
-    height: 100%;
-  }
-}
-.logo {
-  width: 130px;
-  height: 35px;
-}
-.header-menu {
-  margin-left: auto;
-  height: 100%;
-}
-.header-menu-item {
-  position: relative;
-  display: inline-block;
-  font-family: $bold;
-  font-size: 14px;
-  text-transform: uppercase;
-  a {
-    padding-left: 45px;
-    display: inline-block;
-    height: 100%;
-    line-height: 90px;
-    color: $grey;
-    &:hover, &:active {
-      color: black;
-    }
-  }
-}
-.header-menu-item.active {
-  a {
-    color: black;
-  }
-  &:before {
-    content: '';
-    display: inline-block;
-    height: 1px;
-    width: 20px;
-    background-color: black;
-    position: absolute;
-    top: 45px;
-    left: 15px;
-  }
-}
-header .search {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  color: $grey;
-  margin-left: 30px;
-  &:hover, &:active {
-    color: black;
-  }
-}
 //слайдер
 .first-screen__slider {
   position: relative;
   text-align: center;
   min-height: calc(100vh - 90px);
 }
+
 .swiper-wrapper {
   position: relative;
 }
+
 .first-screen__slide {
   position: relative;
   background-image: url(../../images/top-bg.jpg);
@@ -82,22 +22,9 @@ header .search {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  p {
-    font-size: 18px;
-    font-family: $light;
-    text-transform: uppercase;
-    letter-spacing: 6px;
-  }
-  p.title {
-    display: inline-block;
-    padding: 10px 40px;
-    background-color: black;
-    color: white;
-    font-size: 48px;
-    margin-bottom: 48px;
-    letter-spacing: 4px;
-  }
 }
+
+
 
 .first-screen {
   .swiper-container-autoheight, .swiper-container-autoheight .swiper-slide {
@@ -107,10 +34,6 @@ header .search {
 
 .swiper-button-prev,
 .swiper-button-next {
-  /*
-  @extend %fa-icon;
-  @extend .fa;
-  */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,28 +57,34 @@ header .search {
   font-size: 16px;
   cursor: pointer;
   z-index: 1;
-//transform: scale(1.5);
+  //transform: scale(1.5);
   &:hover {
     background-color: $black;
     color: $white;
   }
+
   &.swiper-button-disabled {
     opacity: .2;
     cursor: default;
+
     &:hover {
       background-color: $white;
       color: $black;
     }
   }
 }
+
 .swiper-button-prev {
   left: 55px;
+
   &::before {
     //content: fa-content($fa-var-arrow-left);
   }
 }
+
 .swiper-button-next {
   right: 55px;
+
   &::before {
     //content: fa-content($fa-var-arrow-right);
   }
@@ -172,6 +101,7 @@ header .search {
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
   z-index: 1;
+
   button {
     padding: 0;
     margin: 0 5px;
@@ -188,63 +118,53 @@ header .search {
     -o-transition: .3s;
     transition: .3s;
   }
+
   .swiper-pagination-bullet-active {
     border-color: $black;
   }
 }
 
 
-//media
-@media (max-width: 992px) {
-  .header-menu-item {
-    a {
-      padding-left: 35px;
-    }
-  }
-  .header-menu-item.active {
-    &:before {
-      left: 10px;
-    }
-  }
-}
 
+//MEDIA
 @media (max-width: 768px) {
-  .header-menu-item {
-    display: none;
-  }
-
   .first-screen__slide {
     background-position: center;
-    p {
-      font-size: 14px;
-    }
-    p.title {
-      padding: 10px 30px;
-      font-size: 36px;
-      margin-bottom: 30px;
-    }
   }
+  .first-screen__subtitle {
+    font-size: 14px;
+  }
+  .first-screen__title {
+    padding: 10px 30px;
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: auto;
+    bottom: 20px;
+  }
+
 }
+
 @media (max-width: 578px) {
-  .first-screen__slide {
-    p {
-      font-size: 10px;
-    }
-    p.title {
-      font-size: 24px;
-    }
+  .first-screen__subtitle {
+    font-size: 10px;
+  }
+  .first-screen__title {
+    font-size: 24px;
   }
 }
+
 @media (max-width: 480px) {
-  .first-screen__slide {
-    p {
-      font-size: 8px;
-    }
-    p.title {
-      padding: 10px 20px;
-      font-size: 20px;
-      margin-bottom: 20px;
-      letter-spacing: 2px;
-    }
+  .first-screen__subtitle {
+    font-size: 8px;
+  }
+  .first-screen__title {
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
   }
 }

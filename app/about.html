@@ -15,47 +15,46 @@
 </head>
 <body>
 
-<header class="header">
+<header>
   <div class="container">
-    <div class="logo"><a href="#">
+    <div class="header__logo logo "><a href="#">
       <img src="images/logo.png" alt="LIAN">
     </a>
     </div>
-
-    <ul class="header-menu">
-      <li class="header-menu-item"><a class="" href="index.html">home</a></li>
-      <li class="header-menu-item active"><a href="about.html">about</a></li>
-      <li class="header-menu-item"><a href="portfolio.html">portfolio</a></li>
-      <li class="header-menu-item"><a href="#">blog</a></li>
-      <li class="header-menu-item"><a href="#">contact</a></li>
-    </ul>
-    <a href="#" class="search">
+    <nav class="header__menu">
+      <ul class="header__menu-list">
+        <li class="header__menu-item"><a class="" href="index.html">home</a></li>
+        <li class="header__menu-item active"><a href="about.html">about</a></li>
+        <li class="header__menu-item"><a href="portfolio.html">portfolio</a></li>
+        <li class="header__menu-item"><a href="#">blog</a></li>
+        <li class="header__menu-item"><a href="#">contact</a></li>
+      </ul>
+    </nav>
+    <button href="#" class="search">
       <i class="fas fa-search"></i>
-    </a>
+    </button>
   </div>
 </header>
 
-<section class="about_first-screen">
+<section class="about__first-screen">
   <div class="container">
-
-      <p class="title">
+      <span class="title first-screen__title title">
         About The Agency
-      </p>
-      <p>
+      </span>
+      <span class="first-screen__subtitle subtitle">
         Welcome to Lian
-      </p>
-
+      </span>
   </div>
 </section>
 
-<section class="about-content-section">
+<section class="about__content">
   <div class="container">
     <div class="row">
-      <div class="about-content-img-block">
-        <!--<img src="images/team-img.jpg" alt="our-team">-->
+      <div class="about__content-img">
+<!--        <img src="images/team-img.jpg" alt="our-team">-->
       </div>
-      <div class="about-content-content-block">
-        <div class="our-story">
+      <div class="about__content-content">
+        <div class="about__content-content-text">
           <h3>our story</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
@@ -67,75 +66,116 @@
             possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
           </p>
         </div>
-        <div class="our-skills">
+        <div class="about__content-content-skills skills">
           <h3>
             our skills
           </h3>
-          <div class="skills-block">
-            <div class="skills-item photoshop-skill">
+          <div class="skills__list">
+            <div class="skills__item photoshop">
               <h4>
                 Photoshop
               </h4>
-              <div class="skill photoshop">
-                <div class="scale">
+              <div class="about__range-slider range-slider">
+                <input
+                       class="range-slider__input"
+                       type="range"
+                       min="0"
+                       max="100"
+                       step="1"
+                       value="90"
+                       data-orientation="vertical"
+                >
 
+                <div class="range-slider__wrap">
+                  <div class="range-slider__inner">
+                    <div class="range-slider__track track"></div>
+                    <div class="range-slider__range range"></div>
+                    <div class="range-slider__thumb thumb">
+                      <div class="range-slider__value">85%</div>
+                    </div>
+                  </div>
                 </div>
-                <div class="check-mark">
-                  <div class="percent">90%</div>
-                </div>
+
               </div>
+
             </div>
-            <div class="skills-item branding-skill">
+            <div class="skills__item branding">
               <h4>
                 Branding
               </h4>
-              <div class="skill branding">
-                <div class="scale">
+              <div class="about__range-slider range-slider">
+                <input id="range-input"
+                       class="range-slider__input"
+                       type="range"
+                       min="0"
+                       max="100"
+                       step="1"
+                       value="95"
+                       data-orientation="vertical"
+                >
 
+                <div class="range-slider__wrap">
+                  <div class="range-slider__inner">
+                    <div class="range-slider__track track"></div>
+                    <div class="range-slider__range range"></div>
+                    <div class="range-slider__thumb thumb">
+                      <div class="range-slider__value">85%</div>
+                    </div>
+                  </div>
                 </div>
-                <div class="check-mark">
-                  <div class="percent">95%</div>
-                </div>
+
               </div>
             </div>
-            <div class="skills-item photography-skill">
+            <div class="skills__item photography">
               <h4>
                 Photography
               </h4>
-              <div class="skill photography">
-                <div class="scale">
+              <div class="about__range-slider range-slider">
+                <input
+                       class="range-slider__input"
+                       type="range"
+                       min="0"
+                       max="100"
+                       step="1"
+                       value="50"
+                       data-orientation="vertical"
+                >
 
+                <div class="range-slider__wrap">
+                  <div class="range-slider__inner">
+                    <div class="range-slider__track track"></div>
+                    <div class="range-slider__range range"></div>
+                    <div class="range-slider__thumb thumb">
+                      <div class="range-slider__value">85%</div>
+                    </div>
+                  </div>
                 </div>
-                <div class="check-mark">
-                  <div class="percent">50%</div>
-                </div>
+
               </div>
             </div>
-            <div class="skills-item web_design-skill">
+            <div class="skills__item web_design">
               <h4>
                 Web design
               </h4>
-              <div class="skill web_design">
-                <div class="scale">
-
-                </div>
-                <div class="check-mark">
-                  <div class="percent">85%</div>
-                </div>
-
-
+              <div class="about__range-slider range-slider">
                 <input
-                  type="range"
-                  min="0"
-                  max="100"
-                  step="1"
-                  value="1"
-                  data-orientation="vertical"
+                       class="range-slider__input"
+                       type="range"
+                       min="0"
+                       max="100"
+                       step="1"
+                       value="85"
+                       data-orientation="vertical"
                 >
-                <div class="rangeslider rangeslider--horizontal">
 
-                  <div class="rangeslider__fill"></div>
-                  <div class="rangeslider__handle"></div>
+                <div class="range-slider__wrap">
+                  <div class="range-slider__inner">
+                    <div class="range-slider__track track"></div>
+                    <div class="range-slider__range range"></div>
+                    <div class="range-slider__thumb thumb">
+                      <div class="range-slider__value">85%</div>
+                    </div>
+                  </div>
                 </div>
 
               </div>
@@ -149,7 +189,7 @@
 
 <section class="team">
   <div class="container">
-    <div class="team-header">
+    <div class="team__header section__header">
       <h2>Awesome Team</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
@@ -159,12 +199,12 @@
     </div>
 
     <div class="cards row">
-      
-      <div class="cards-item">
-        <div class="cards-photo">
+
+      <div class="cards__item">
+        <div class="cards__photo">
         <img src="images/photo-1.jpg" alt="">
         </div>
-        <div class="cards-information">
+        <div class="cards__information">
           <h3 class="name">
             Lian Joy
           </h3>
@@ -176,11 +216,11 @@
         </div>
 
       </div>
-      <div class="cards-item">
-        <div class="cards-photo">
+      <div class="cards__item">
+        <div class="cards__photo">
           <img src="images/photo-2.jpg" alt="">
         </div>
-        <div class="cards-information">
+        <div class="cards__information">
           <h3 class="name">
             Albert Thanh
           </h3>
@@ -192,11 +232,11 @@
         </div>
 
       </div>
-      <div class="cards-item">
-        <div class="cards-photo">
+      <div class="cards__item">
+        <div class="cards__photo">
           <img src="images/photo-3.jpg" alt="">
         </div>
-        <div class="cards-information">
+        <div class="cards__information">
           <h3 class="name">
             Jenn Pereira
           </h3>
@@ -214,21 +254,21 @@
   </div>
 </section>
 
-<footer class="footer-section">
-  <div class="section">
-    <div class="logo">
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="logo footer__logo">
       <a href="#">
         <img src="images/logo.png" alt="logo">
       </a>
     </div>
-    <ul class="footer-contacts-block">
-      <li class="footer-contacts-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-      <li class="footer-contacts-item"><a href="#"><i class="fab fa-google-plus-g"></i></i></a></li>
-      <li class="footer-contacts-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-      <li class="footer-contacts-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-      <li class="footer-contacts-item"><a href="#"><i class="fab fa-odnoklassniki"></i></a></li>
-      <li class="footer-contacts-item"><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-      <li class="footer-contacts-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+    <ul class="footer__social-block">
+      <li class="footer__social-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+      <li class="footer__social-item"><a href="#"><i class="fab fa-google-plus-g"></i></i></a></li>
+      <li class="footer__social-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li class="footer__social-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+      <li class="footer__social-item"><a href="#"><i class="fab fa-odnoklassniki"></i></a></li>
+      <li class="footer__social-item"><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+      <li class="footer__social-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
     </ul>
     <div class="footer-rights-block">
 

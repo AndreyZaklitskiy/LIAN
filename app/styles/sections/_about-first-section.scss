@@ -1,9 +1,5 @@
-.about_first-screen {
-  background-image: url(../../images/about-top-bg.jpg);
-  background-position: 100%;
-  background-color: #f0f0f1;
-  background-repeat: no-repeat;
-
+.about__first-screen {
+  background: url(../../images/about-top-bg.jpg) center 100% no-repeat #f0f0f1;
   height: 350px;
   .container {
     position: relative;
@@ -13,68 +9,9 @@
     justify-content: center;
     align-items: flex-start;
   }
-  p {
-    font-size: 18px;
-    font-family: $light;
-    text-transform: uppercase;
-    letter-spacing: 6px;
-  }
-  p.title {
-    display: inline-block;
-    padding: 10px 40px;
-    background-color: black;
-    color: white;
-    font-size: 48px;
-    margin-bottom: 48px;
-    letter-spacing: 4px;
-  }
-}
-
-.rangeslider {
-  input {
-
-  }
-
 }
 
 
-
-
-@media (max-width: 992px) {
-
-}
 @media (max-width: 768px) {
-.about_first-screen {
-  p {
-    font-size: 14px;
-  }
-  p.title {
-    padding: 10px 30px;
-    font-size: 36px;
-    margin-bottom: 30px;
-  }
-}
-}
-@media (max-width: 578px) {
-.about_first-screen {
-  p {
-    font-size: 10px;
-  }
-  p.title {
-    font-size: 24px;
-  }
-}
-}
-@media (max-width: 480px) {
-  .about_first-screen {
-    p {
-      font-size: 8px;
-    }
-    p.title {
-      padding: 10px 20px;
-      font-size: 20px;
-      margin-bottom: 20px;
-      letter-spacing: 2px;
-    }
-  }
+
 }
