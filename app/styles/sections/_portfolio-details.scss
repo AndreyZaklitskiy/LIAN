@@ -1,0 +1,54 @@
+.portfolio_first-screen {
+  .container {
+
+  }
+}
+.navigation {
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__btn {
+    color: #071f08;
+    font-size: 13px;
+    font-family: $bold;
+    text-transform: uppercase;
+    width: 160px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid rgba(#ebebeb, .7);
+    border-right: 1px solid rgba(#ebebeb, .7);
+    letter-spacing: 1px;
+    i {
+      font-size: 11px;
+    }
+    span {
+      padding: 0 15px;
+    }
+  }
+  &__arrows {
+    display: flex;
+
+  }
+  &__arrows-left {
+    margin-left: 2px;
+  }
+  &__arrows-right {
+    border-left: none;
+  }
+}
+
+
+
+
+//media
+@media(max-width: 575px) {
+  .navigation__arrow {
+    width: 60px;
+    span {
+      display: none;
+    }
+  }
+}
