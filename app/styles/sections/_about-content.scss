@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    background-position: -253px center;
+    background-position: right center;
   }
   &-content {
     @extend .col-sm-6;
@@ -47,6 +47,7 @@
     position: absolute;
     z-index: 4;
     opacity: 0;
+    cursor: pointer;
   }
   &>input[type=range]::-webkit-slider-thumb {
     width: 20px;
