@@ -10,7 +10,7 @@
     "modernizr": "^3.7.1",
     "popper.js": "^1.15.0",
     "rangeslider.js": "^2.3.3",
-    "swiper": "^5.2.1"
+    "swiper": "^6.5.1"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
